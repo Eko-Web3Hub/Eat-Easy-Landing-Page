@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #667085;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #129575;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0e7154;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #667085;
+}
+
+h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #121212;
+}
+
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #101828;
+}
+
+p {
+  margin: 0;
+
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #667085;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button.primary {
+  background-color: #129575;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+button.primary:hover {
+  background-color: #0e7154;
+}
+
+button.ghost {
+  background-color: transparent;
+  color: #129575;
+  border: 1px solid #129575;
+  border-radius: 8px;
+}
+button.ghost:hover {
+  background-color: #f3fdfb;
+}
+button.secondary {
+  background-color: #f76631;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #0e7154;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 3px #f766312d;
+  color: transparent;
+  background-clip: text;
+}
