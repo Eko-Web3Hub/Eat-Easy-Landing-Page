@@ -1,23 +1,11 @@
-import React, { useState } from "react";
-import TermsContent from "./TermsContent";
-import PrivacyPolicyContent from "./PrivacyPolicyContent";
-import Modal from "./Modal"; // Assuming Modal is in the same folder
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState("");
-  const [modalContent, setModalContent] = useState("");
+  const navigate = useNavigate();
 
-  const handleOpenModal = (title, content) => {
-    setModalTitle(title);
-    setModalContent(content);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalTitle("");
-    setModalContent("");
+  const handleNavigate = (path) => {
+    navigate(path);
   };
 
   return (
@@ -32,48 +20,55 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="md:w-2/3 grid grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-bold text-lg mb-4">Product</h3>
+        <div className="md:w-2/3 grid grid-cols-2 gap-12">
+          <div className="flex flex-col items-start">
+            <h3 className="font-bold text-lg mb-4 ml-4">Product</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-white hover:text-secondary">
+                <button
+                  onClick={() => handleNavigate("#features")}
+                  className="text-white hover:text-secondary"
+                >
                   Features
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-secondary">
+                <button
+                  onClick={() => handleNavigate("#")}
+                  className="text-white hover:text-secondary"
+                >
                   How does it work?
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-secondary">
+                <button
+                  onClick={() => handleNavigate("#")}
+                  className="text-white hover:text-secondary"
+                >
                   FAQ
-                </a>
+                </button>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Legal</h3>
+          <div className="text-left">
+            <h3 className="font-bold text-lg mb-4 ml-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <button
+                  onClick={() => handleNavigate("/terms-and-conditions")}
                   className="text-white hover:text-secondary"
-                  onClick={() => handleOpenModal("Terms & Conditions", <TermsContent />)}
                 >
                   Terms & Conditions
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#"
+                <button
+                  onClick={() => handleNavigate("/privacy-policy")}
                   className="text-white hover:text-secondary"
-                  onClick={() => handleOpenModal("Privacy Policy", <PrivacyPolicyContent />)}
                 >
                   Privacy Policy
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -96,14 +91,6 @@ const Footer = () => {
           &copy; 2024 Eat'Easy. All rights reserved.
         </p>
       </div>
-
-      {/* Modal for Terms and Privacy */}
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        title={modalTitle}
-        content={modalContent}
-      />
     </footer>
   );
 };
