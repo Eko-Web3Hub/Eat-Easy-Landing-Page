@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -52,23 +53,22 @@ const Footer = () => {
           </div>
 
           <div className="text-left">
-            <h3 className="font-bold text-lg mb-4 ml-4">Legal</h3>
+            <h3 className="font-bold text-lg mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => handleNavigate("/terms-and-conditions")}
-                  className="text-white hover:text-secondary"
-                >
-                  Terms & Conditions
-                </button>
+                <Link 
+                to={"/terms-and-conditions"} 
+                className="text-white hover:text-secondary">
+                Terms & Conditions
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavigate("/privacy-policy")}
+                <Link
+                  to={"/privacy-policy"} 
                   className="text-white hover:text-secondary"
                 >
                   Privacy Policy
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
