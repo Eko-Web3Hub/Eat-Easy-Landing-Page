@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import AppleLogo from "../assets/apple.svg";
 
 const Header = () => {
   const images = [
@@ -30,7 +32,12 @@ const Header = () => {
           preferences.
         </p>
         <div className="flex flex-row gap-10 justify-center lg:justify-start">
-          <button className="primary shadow-custom w-full lg:w-1/3">Find Recipes</button>
+          <Link to="" className="contents">
+            <button className="primary shadow-custom w-full lg:w-1/3 flex items-center justify-center gap-2">
+              Find Recipes
+              <img src={AppleLogo} alt="Apple" className="w-5 h-5 invert" />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-1 items-center justify-center relative w-full overflow-hidden">
