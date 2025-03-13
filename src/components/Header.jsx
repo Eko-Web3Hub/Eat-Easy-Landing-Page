@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AppleLogo from "../assets/apple.svg";
+import PlayStoreLogo from "../assets/playstore.svg";
 
 const Header = () => {
   const images = [
@@ -34,12 +35,19 @@ const Header = () => {
         <div className="flex flex-row gap-10 justify-center lg:justify-start">
           <Link target="_blank" to="https://apps.apple.com/fr/app/eateasy/id6739941450" className="contents">
             <button className="primary shadow-custom w-full lg:w-1/3 flex items-center justify-center gap-2">
-              Find Recipes
+              Apple Store
               <img src={AppleLogo} alt="Apple" className="w-5 h-5 invert" />
+            </button>
+          </Link>
+          <Link target="_blank" to="https://apps.apple.com/fr/app/eateasy/id6739941450" className="contents">
+            <button className="primary shadow-custom w-full lg:w-1/3 flex items-center justify-center gap-2">
+              Play Store
+              <img src={PlayStoreLogo} alt="PlayStore" className="w-5 h-5" />
             </button>
           </Link>
         </div>
       </div>
+      
       <div className="flex flex-1 items-center justify-center relative w-full overflow-hidden">
         <AnimatePresence>
           <motion.img
