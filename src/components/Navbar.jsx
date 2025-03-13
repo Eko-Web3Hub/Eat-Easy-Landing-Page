@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* Logo */}
       <div>
         <img
-          src="/logo.png"
+          src="/eateasy-logo.png"
           alt="Eat'easy"
           className="w-32 sm:w-40 md:w-48 cursor-pointer"
           onClick={() => handleNavigate("/")}
