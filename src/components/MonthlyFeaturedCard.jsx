@@ -15,13 +15,13 @@ const MonthlyFeaturedCard = () => {
       name: "Spencer",
       role: "Frontend",
       image: "/chiefs/Sophia.png",
-      linkedin: "https://www.linkedin.com/in/spencerhacheme",
+      linkedin: "https://www.linkedin.com/in/loic-hacheme",
     },
     {
       name: "Jude",
       role: "Design",
       image: "/chiefs/Liam.png",
-      linkedin: "https://www.linkedin.com/in/judesaizonou",
+      linkedin: "https://www.linkedin.com/in/jude-saizonou",
     },
   ];
 
