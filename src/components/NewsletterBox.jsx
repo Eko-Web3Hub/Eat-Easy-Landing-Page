@@ -102,7 +102,9 @@ const NewsletterBox = () => {
       <iframe ref={iframeRef} style={{ display: "none" }} title="hidden-submission"></iframe>
 
       {/* "DELICIOUS" Text Background */}
-      <div className="absolute -bottom-6 md:-bottom-20 md:right-0 font-extrabold text-6xl md:text-[200px] text-stroke text-center">
+      <div className="absolute -bottom-6 md:-bottom-20 md:right-0 font-extrabold text-6xl md:text-[200px] text-stroke text-center"
+        style={{ userSelect: "none" }} // Prevent text selection
+      >
         DELICIOUS
       </div>
     </div>
