@@ -8,9 +8,9 @@ const App = () => {
   return (
     <LanguageProvider>
       <Router>
-        <div className="w-screen max-w-full overflow-hidden">
+        <div className="bg-body w-screen max-w-full overflow-hidden">
           {/* Navbar section */}
-          <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mb-6">
+          <div className="bg-navbar px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mb-6">
             <Navbar />
           </div>
 
