@@ -4,67 +4,119 @@ const TermsContent = () => (
   <div className="px-4 py-6 lg:px-10 lg:py-12 text-gray-800">
     <h4 className="text-3xl font-bold mb-6 text-center">Terms & Conditions</h4>
     <p className="mb-6">
-      Welcome to Eat'Easy! By accessing or using our app, you agree to be bound by these terms and conditions. Please read them carefully before proceeding. If you do not agree with these terms, you must refrain from using the app.
+      Welcome to EatEasy! By accessing or using our app, website, or services (collectively, the "Service"), you agree to be bound by these Terms and Conditions ("Terms"). Please read them carefully before proceeding. If you do not agree with these Terms, you must refrain from using the Service.
     </p>
 
     <h5 className="font-semibold text-lg mt-6 mb-2">1. Introduction</h5>
     <p className="mb-4">
-      These Terms and Conditions ("Terms") govern your use of the Eat'Easy app, its features, and services. By downloading, accessing, or using the app, you acknowledge that you have read, understood, and agreed to comply with these Terms.
+      These Terms govern your use of the EatEasy app, its features, and services, including but not limited to recipe generation, inventory management, ticket scanning, and community features. By downloading, accessing, or using the Service, you acknowledge that you have read, understood, and agreed to comply with these Terms. EatEasy reserves the right to modify these Terms at any time, and such changes will be effective upon posting. Your continued use of the Service after changes constitutes acceptance of the updated Terms.
     </p>
 
     <h5 className="font-semibold text-lg mt-6 mb-2">2. Eligibility</h5>
     <p className="mb-4">
-      The app is intended for users who are 13 years of age or older. By using the app, you confirm that you meet this requirement. Users under 18 years of age may only use the app under the supervision of a parent or legal guardian.
+      The Service is intended for users who are at least 13 years of age. If you are under 18, you may only use the Service with the consent and supervision of a parent or legal guardian. By using the Service, you confirm that you meet these eligibility requirements and that any information you provide (e.g., age, location) is accurate.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">3. Use of the App</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">3. Account Registration and Security</h5>
     <p className="mb-4">
-      You agree to use the app solely for personal and non-commercial purposes. Unauthorized use of the app, including but not limited to attempting to access restricted areas, reverse-engineering the app, or disrupting its services, is strictly prohibited.
+      To access certain features of the Service (e.g., saving recipes, generating shopping lists, or participating in community challenges), you may need to create an account. You agree to provide accurate and complete information during registration and to keep your account credentials secure. You are responsible for all activities that occur under your account. If you suspect unauthorized access, you must notify us immediately at <a href="mailto:eateasyhub@gmail.com" className="text-blue-500 underline">eateasyhub@gmail.com</a>.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">4. Content Ownership and Intellectual Property</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">4. Use of the Service</h5>
     <p className="mb-4">
-      All content provided through the Eat'Easy app, including but not limited to text, images, logos, recipes, and software, is the exclusive property of Eat'Easy or its licensors. You may not copy, modify, distribute, or create derivative works from this content without prior written consent.
+      You agree to use the Service for personal, non-commercial purposes only, unless otherwise agreed in writing by EatEasy. Prohibited activities include, but are not limited to:
+      <ul className="list-disc pl-6">
+        <li>Using the Service for illegal or unauthorized purposes.</li>
+        <li>Attempting to access restricted areas, reverse-engineer, or hack the Service.</li>
+        <li>Disrupting the Service’s functionality or harming other users (e.g., uploading malicious content).</li>
+        <li>Scraping or harvesting data from the Service without permission.</li>
+      </ul>
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">5. User-Generated Content</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">5. Content Ownership and Intellectual Property</h5>
     <p className="mb-4">
-      If you submit or share any content through the app (e.g., recipe suggestions, reviews, or feedback), you grant Eat'Easy a non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, and distribute such content in connection with the app and its services.
+      All content provided through the Service, including but not limited to text, images, logos, recipes, software, and design elements, is the exclusive property of EatEasy or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, or create derivative works from this content without prior written consent from EatEasy. You are granted a limited, non-exclusive, non-transferable license to use the Service for personal purposes, subject to these Terms.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">6. Privacy and Data Collection</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">6. User-Generated Content</h5>
     <p className="mb-4">
-      Your privacy is important to us. By using the app, you agree to our Privacy Policy, which outlines how we collect, use, and protect your personal information. You can view the full policy within the app or on our website.
+      You may submit or share content through the Service, such as recipes, reviews, feedback, or community posts ("User Content"). By submitting User Content, you grant EatEasy a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, and sublicensable license to use, reproduce, modify, adapt, publish, distribute, and display such content in connection with the Service, including for promotional purposes. You represent and warrant that:
+      <ul className="list-disc pl-6">
+        <li>You own or have the necessary rights to share the User Content.</li>
+        <li>Your User Content does not infringe on the rights of others (e.g., copyright, privacy).</li>
+        <li>Your User Content complies with applicable laws and these Terms.</li>
+      </ul>
+      EatEasy reserves the right to remove or moderate User Content that violates these Terms or is deemed inappropriate.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">7. Limitation of Liability</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">7. Community Features and Gamification</h5>
     <p className="mb-4">
-      To the maximum extent permitted by law, Eat'Easy shall not be held liable for any direct, indirect, incidental, or consequential damages arising out of your use of the app, including but not limited to loss of data, revenue, or goodwill.
+      The Service includes community features such as recipe sharing, challenges, leaderboards, and voting. You agree to engage respectfully with other users and to refrain from posting offensive, defamatory, or harmful content. EatEasy is not responsible for the accuracy or quality of user interactions within these features but may intervene to ensure a safe and positive environment.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">8. Updates and Modifications</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">8. Privacy and Data Collection</h5>
     <p className="mb-4">
-      Eat'Easy reserves the right to modify, update, or discontinue the app or its features at any time without prior notice. Additionally, we may update these Terms periodically. Continued use of the app after such updates constitutes acceptance of the revised Terms.
+      Your privacy is important to us. By using the Service, you agree to our Privacy Policy, which details how we collect, use, store, and protect your personal information, including data from ticket scans, ingredient lists, and user interactions. You can review the full Privacy Policy within the app or on our website. You also consent to the use of cookies and similar technologies to enhance your experience.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">9. Termination</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">9. Third-Party Integrations and Links</h5>
     <p className="mb-4">
-      We reserve the right to suspend or terminate your access to the app if you violate these Terms or engage in unauthorized activities that disrupt the app's functionality or harm other users.
+      The Service may integrate with third-party services (e.g., payment processors, delivery apps) or contain links to external websites. EatEasy is not responsible for the content, privacy practices, or availability of these third-party services. Your use of such services is at your own risk and subject to their respective terms and policies.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">10. Governing Law</h5>
+    <h5 className="font-semibold text-lg mt-6 mb-2">10. Subscription and Payment (If Applicable)</h5>
     <p className="mb-4">
-      These Terms are governed by and construed in accordance with the laws of [Your Country/Region]. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in [Your City/Country].
+      Certain features of the Service may require a subscription or payment (e.g., premium recipe access, advanced analytics). All fees are non-refundable unless otherwise stated. You agree to provide accurate payment information and authorize EatEasy to charge the applicable fees. Subscriptions may auto-renew unless canceled before the renewal date. EatEasy reserves the right to modify pricing with prior notice.
     </p>
 
-    <h5 className="font-semibold text-lg mt-6 mb-2">11. Contact Us</h5>
-    <p>
-      If you have any questions, concerns, or feedback regarding these Terms, please feel free to contact us at:
+    <h5 className="font-semibold text-lg mt-6 mb-2">11. Limitation of Liability</h5>
+    <p className="mb-4">
+      To the maximum extent permitted by law, EatEasy and its affiliates, officers, employees, or agents shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the Service, including but not limited to:
+      <ul className="list-disc pl-6">
+        <li>Loss of data, revenue, or goodwill.</li>
+        <li>Inaccuracies in recipes or nutritional information.</li>
+        <li>Service interruptions or technical issues.</li>
+        <li>Actions or content of other users.</li>
+      </ul>
+      The Service is provided on an "as-is" and "as-available" basis, and EatEasy does not guarantee that it will be error-free or uninterrupted.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">12. Indemnification</h5>
+    <p className="mb-4">
+      You agree to indemnify and hold harmless EatEasy and its affiliates, officers, employees, and agents from any claims, liabilities, damages, or expenses (including legal fees) arising from your use of the Service, violation of these Terms, or infringement of any third-party rights.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">13. Updates and Modifications</h5>
+    <p className="mb-4">
+      EatEasy may update, modify, or discontinue the Service or its features at any time without prior notice. We may also update these Terms periodically, and the updated Terms will be posted within the app or on our website. Your continued use of the Service after such updates constitutes acceptance of the revised Terms.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">14. Termination</h5>
+    <p className="mb-4">
+      EatEasy reserves the right to suspend or terminate your access to the Service at its sole discretion, with or without notice, if you violate these Terms, engage in prohibited activities, or for any other reason deemed necessary to protect the Service or its users. Upon termination, your right to use the Service will cease, and any data associated with your account may be deleted, subject to applicable laws.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">15. Governing Law and Dispute Resolution</h5>
+    <p className="mb-4">
+      These Terms are governed by the laws of France, given EatEasy’s operations in France and Bénin. Any disputes arising from these Terms or your use of the Service shall be subject to the exclusive jurisdiction of the courts in Paris, France. For users in Bénin, disputes may also be resolved through mediation or arbitration in Cotonou, as per local regulations, if applicable.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">16. Force Majeure</h5>
+    <p className="mb-4">
+      EatEasy shall not be liable for any failure to perform its obligations under these Terms due to events beyond its reasonable control, including but not limited to natural disasters, pandemics, government actions, or internet outages.
+    </p>
+
+    <h5 className="font-semibold text-lg mt-6 mb-2">17. Contact Us</h5>
+    <p className="mb-4">
+      If you have any questions, concerns, or feedback regarding these Terms, please contact us at:
     </p>
     <p className="mt-2">
       <a href="mailto:eateasyhub@gmail.com" className="text-blue-500 underline">
         eateasyhub@gmail.com
       </a>
+    </p>
+    <p className="mt-2">
+      Last updated: March 20, 2025
     </p>
   </div>
 );
