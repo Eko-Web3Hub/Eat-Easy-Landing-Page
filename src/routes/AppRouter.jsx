@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyAndPolicy from "../pages/PrivacyAndPolicy";
+import DeleteAccount from "../pages/DeleteAccount";
 
 const AppRouter = () => {
   return (
@@ -10,6 +11,7 @@ const AppRouter = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       <Route path="/privacy-policy" element={<PrivacyAndPolicy />} />
+      <Route path="/delete-account" element={<DeleteAccount />} />
     </Routes>
   );
 };
