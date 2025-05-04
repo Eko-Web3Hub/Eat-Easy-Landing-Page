@@ -11,6 +11,7 @@
     "generate-index": "node src/components/generateIndex.js"
   },
   "dependencies": {
+    "firebase": "^11.6.1",
     "framer-motion": "^11.15.0",
     "i18next": "^24.2.0",
     "lightweight-charts": "^4.2.2",

@@ -1,33 +1,75 @@
 // src/pages/DeleteAccount.jsx
 
 import React, { useState } from 'react';
+import { signInWithEmailAndPassword, deleteUser } from 'firebase/auth';
+import { firebaseApp, auth } from '../firebase'; // Import depuis le fichier de configuration
 
 const DeleteAccount = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Logique de suppression de compte ici
-    console.log('Email:', email);
-    console.log('Password:', password);
+    setError(null);
+    setSuccess(null);
+
+    try {
+      // Réauthentification de l'utilisateur
+      await signInWithEmailAndPassword(auth, email, password);
+      
+      // Suppression de l'utilisateur
+      const user = auth.currentUser;
+      await deleteUser(user);
+      
+      setSuccess('Votre compte a été supprimé avec succès.');
+      setEmail('');
+      setPassword('');
+    } catch (err) {
+      // Gestion des erreurs Firebase
+      switch (err.code) {
+        case 'auth/wrong-password':
+          setError('Mot de passe incorrect.');
+          break;
+        case 'auth/user-not-found':
+          setError('Aucun compte trouvé avec cet email.');
+          break;
+        case 'auth/too-many-requests':
+          setError('Trop de tentatives. Veuillez réessayer plus tard.');
+          break;
+        default:
+          setError('Une erreur est survenue. Veuillez réessayer.');
+          console.error('Erreur Firebase:', err);
+      }
+    }
   };
 
   return (
-    <div className="bg-body flex items-center justify-center p-4">
-      <div className="bg-card p-8 rounded-xl max-w-md w-full">
+    <div className="min-h-screen bg-body flex items-center justify-center p-4">
+      <div className="bg-card p-8 rounded-xl shadow-custom max-w-md w-full">
         <h2 className="text-2xl font-bold text-darkest mb-4 text-center">
           Supprimer votre compte
         </h2>
         <div className="text-center text-sm text-darkest bg-red-100 p-3 rounded-lg mb-5">
-        <p className="text-darkest text-sm md:text-base mb-6 text-center">
-          La suppression de votre compte est irréversible. Toutes vos données, y compris vos recettes et préférences, seront définitivement effacées.
-        </p>
-        <span className="font-semibold ">Attention :</span> Cette action ne peut pas être annulée.
+          <p className="text-darkest text-sm md:text-base mb-2">
+            La suppression de votre compte est irréversible. Toutes vos données, y compris vos recettes et préférences, seront définitivement effacées.
+          </p>
+          <span className="font-semibold">Attention :</span> Cette action ne peut pas être annulée.
         </div>
         <p className="text-center text-darkest text-sm md:text-base mb-4 mt-5">
           Pour confirmer la suppression du compte, veuillez entrer votre adresse email et votre mot de passe.
         </p>
+        {error && (
+          <div className="text-center text-sm text-darkest bg-red-200 p-3 rounded-lg mb-4">
+            {error}
+          </div>
+        )}
+        {success && (
+          <div className="text-center text-sm text-darkest bg-green-100 p-3 rounded-lg mb-4">
+            {success}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="relative">
             <input
