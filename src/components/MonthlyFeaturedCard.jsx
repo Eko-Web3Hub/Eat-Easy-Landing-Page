@@ -1,25 +1,27 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Card from "./monthlyFeaturedCard/Card";
 
 const MonthlyFeaturedCard = () => {
+  const { t } = useTranslation();
   const [selectedCard, setSelectedCard] = useState(null);
 
   const featuredChefs = [
     {
       name: "Imdad",
-      role: "Front/Backend",
+      role: t('team.roles.frontBackend'),
       image: "/chiefs/Edward.png",
       linkedin: "https://www.linkedin.com/in/imdad-adelabou-a4056919a",
     },
     {
       name: "Spencer",
-      role: "Frontend",
+      role: t('team.roles.frontend'),
       image: "/chiefs/Sophia.png",
       linkedin: "https://www.linkedin.com/in/loic-hacheme",
     },
     {
       name: "Jude",
-      role: "Design",
+      role: t('team.roles.design'),
       image: "/chiefs/Liam.png",
       linkedin: "https://www.linkedin.com/in/jude-saizonou",
     },
@@ -29,7 +31,7 @@ const MonthlyFeaturedCard = () => {
     <div className="p-4 md:p-8">
       {/* Heading */}
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-20 md:mb-20">
-        Easy Teams Chefs
+        {t('team.title')}
       </h2>
 
       {/* Cards */}

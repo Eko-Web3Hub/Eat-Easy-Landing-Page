@@ -1,46 +1,43 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Card from "./features/Card";
 
 const Features = () => {
+  const { t } = useTranslation();
+  
   const features = [
     {
-      title: "Add Ingredients",
-      description:
-        "Easily add ingredients from your kitchen to your inventory and keep track of what you have.",
+      title: t('features.addIngredients.title'),
+      description: t('features.addIngredients.description'),
       image: "/features/list-add.png",
     },
     {
-      title: "Generate Recipes",
-      description:
-        "Get personalized recipe suggestions based on the ingredients you've added.",
+      title: t('features.generateRecipes.title'),
+      description: t('features.generateRecipes.description'),
       image: "/features/generate.png",
     },
     {
-      title: "Organize Your Meal Prep and Track Calories",
-      description:
-        "Effortlessly plan your meals and track the calories you consume to stay on top of your health goals.",
+      title: t('features.mealPrepTracker.title'),
+      description: t('features.mealPrepTracker.description'),
       image: "/features/kpi.png",
-      soon: "(Soon)",
+      soon: t('features.mealPrepTracker.soon'),
     },
     {
-      title: "Challenge Friends",
-      description:
-        "Compete with your friends to complete challenges and earn badges as you progress.",
+      title: t('features.challengeFriends.title'),
+      description: t('features.challengeFriends.description'),
       image: "/features/target-arrow.png",
-      soon: "(Soon)",
+      soon: t('features.challengeFriends.soon'),
     },
     {
-      title: "Scan Shopping Receipts",
-      description:
-        "Upload your shopping receipts to automatically add items to your inventory.",
+      title: t('features.scanReceipts.title'),
+      description: t('features.scanReceipts.description'),
       image: "/features/qrcode-scan.png",
     },
     {
-      title: "Voice to Text",
-      description:
-        "Use voice commands to add ingredients or find recipes with ease.",
+      title: t('features.voiceToText.title'),
+      description: t('features.voiceToText.description'),
       image: "/features/keyboard-voice.png",
-      soon: "(Soon)",
+      soon: t('features.voiceToText.soon'),
     },
   ];
 
@@ -49,10 +46,10 @@ const Features = () => {
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-          Discover What Our App Can Do
+          {t('features.sectionTitle')}
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto">
-          Eat'Easy is your ultimate kitchen companion, packed with features that make meal planning effortless and cooking a joy. Discover how it can revolutionize your culinary journey!
+          {t('features.sectionSubtitle')}
         </p>
       </div>
 

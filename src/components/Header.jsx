@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import AppleLogo from "../assets/apple.svg";
 import PlayStoreLogo from "../assets/playstore.svg";
 
 const Header = () => {
+  const { t } = useTranslation();
   const images = [
     "/ingredientsadding.png",
     "/preferences.png",
@@ -23,25 +25,22 @@ const Header = () => {
     <div className="flex flex-col lg:flex-row lg:space-x-10 p-5">
       {/* Text Section */}
       <div className="flex flex-1 flex-col space-y-[25px] mb-8 lg:mb-0">
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-2xl lg:text-4xl">
-          Say goodbye to kitchen dilemmas with Eat'Easy
+        <h1 className="title-magilio text-2xl md:text-5xl lg:text-6xl xl:text-7xl">
+          {t('header.title')}
         </h1>
         <p className="text-base lg:text-lg">
-          Unlock the power of your pantry! We help you to generate personalized
-          recipes based on the ingredients you already have. Save time, reduce
-          waste, and enjoy healthy, delicious meals tailored to your
-          preferences.
+          {t('header.subtitle')}
         </p>
         <div className="flex flex-row gap-10 justify-center lg:justify-start">
           <Link target="_blank" to="https://apps.apple.com/fr/app/eateasy/id6739941450" className="contents">
-            <button className="primary shadow-custom w-full lg:w-1/3 flex items-center justify-center gap-2">
-              Apple Store
+            <button className="bg-primary rounded-xl text-white w-full lg:w-1/3 flex items-center justify-center gap-2">
+              {t('header.appleStore')}
               <img src={AppleLogo} alt="Apple" className="w-5 h-5 invert" />
             </button>
           </Link>
-          <Link target="_blank" to="https://forms.gle/WewSBLtPvnhbB7Qy8" className="contents">
-            <button className="primary shadow-custom w-full lg:w-1/3 flex items-center justify-center gap-2">
-              Play Store
+          <Link target="_blank" to="https://play.google.com/store/apps/details?id=com.receipeapi.app&pli=1" className="contents">
+            <button className="bg-primary rounded-xl text-white w-full lg:w-1/3 flex items-center justify-center gap-2">
+              {t('header.playStore')}
               <img src={PlayStoreLogo} alt="PlayStore" className="w-5 h-5" />
             </button>
           </Link>

@@ -90,21 +90,6 @@ const Navbar = () => {
           } absolute top-full right-0 w-auto bg-white shadow-lg z-10 rounded-lg px-10`}
         >
           <div className="flex flex-col items-center">
-            <a
-              href="/#features"
-              className="block py-3 text-black hover:text-primary hover:underline text-center transition-colors duration-300 ease-in-out"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FEATURES
-            </a>
-            <a
-              href="#footer"
-              className="block py-3 text-black hover:text-primary hover:underline text-center transition-colors duration-300 ease-in-out"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              SERVICES
-            </a>
-
             {/* Language Switcher */}
             <div className="flex space-x-4 mt-4">
               <img
@@ -130,19 +115,7 @@ const Navbar = () => {
 
       {/* Desktop Navigation Links */}
       <div className="hidden md:flex space-x-10 items-center font-bold">
-        <a
-          href="/#features"
-          className="text-black hover:text-primary hover:underline"
-        >
-          FEATURES
-        </a>
-        <a
-          href="#footer"
-          className="text-black hover:text-primary hover:underline"
-        >
-          SERVICES
-        </a>
-
+        
         {/* Language Switcher */}
         <div className="flex space-x-4 items-center">
           <img

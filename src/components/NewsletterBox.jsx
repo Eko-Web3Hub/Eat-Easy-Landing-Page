@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const NewsletterBox = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -12,7 +14,7 @@ const NewsletterBox = () => {
     setLoading(true);
 
     if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      setStatus({ type: "error", message: "Please enter a valid email address." });
+      setStatus({ type: "error", message: t('newsletter.errorMessage') });
       setLoading(false);
       return;
     }
@@ -40,7 +42,7 @@ const NewsletterBox = () => {
 
       // Assume success if form submission is initiated
       setTimeout(() => {
-        setStatus({ type: "success", message: "Subscription successful! Please check your inbox." });
+        setStatus({ type: "success", message: t('newsletter.successMessage') });
         setEmail("");
         setLoading(false);
       }, 1000);
@@ -61,7 +63,7 @@ const NewsletterBox = () => {
       {/* Text and Form Section */}
       <div className="flex flex-col space-y-6 md:space-y-10 flex-grow text-center md:items-center md:justify-center md:text-left">
         <h2 className="text-lg md:text-3xl md:text-center font-bold">
-          Delicious Recipes delivered daily to your mailbox
+          {t('newsletter.title')}
         </h2>
 
         {/* Subscription Form */}
@@ -71,18 +73,18 @@ const NewsletterBox = () => {
             name="EMAIL"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="your.email@example.com"
+            placeholder={t('newsletter.placeholder')}
             className="bg-white p-3 pl-10 rounded-xl focus:outline-none w-full text-sm md:text-base"
             required
           />
           <button
             type="submit"
             disabled={loading}
-            className={`absolute right-1 px-4 md:px-10 py-2 text-white bg-primary rounded-xl hover:bg-primary-dark transition ${
+            className={`absolute right-1 px-4 md:px-10 py-2 text-white bg-primary rounded-xl transition ${
               loading ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            {loading ? "Submitting..." : "Submit"}
+            {loading ? t('newsletter.submitting') : t('newsletter.submit')}
           </button>
         </form>
 
@@ -105,7 +107,7 @@ const NewsletterBox = () => {
       <div className="absolute -bottom-6 md:-bottom-20 md:right-0 font-extrabold text-6xl md:text-[200px] text-stroke text-center"
         style={{ userSelect: "none" }} // Prevent text selection
       >
-        DELICIOUS
+        {t('newsletter.backgroundText')}
       </div>
     </div>
   );

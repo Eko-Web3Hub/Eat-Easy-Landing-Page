@@ -1,0 +1,225 @@
+{
+  "header": {
+    "title": "Say goodbye to kitchen dilemmas with Eat'Easy",
+    "subtitle": "Unlock the power of your pantry! We help you to generate personalized recipes based on the ingredients you already have. Save time, reduce waste, and enjoy healthy, delicious meals tailored to your preferences.",
+    "appleStore": "Apple Store",
+    "playStore": "Play Store"
+  },
+  "features": {
+    "sectionTitle": "Discover What Our App Can Do",
+    "sectionSubtitle": "Eat'Easy is your ultimate kitchen companion, packed with features that make meal planning effortless and cooking a joy. Discover how it can revolutionize your culinary journey!",
+    "addIngredients": {
+      "title": "Add Ingredients",
+      "description": "Easily add ingredients from your kitchen to your inventory and keep track of what you have."
+    },
+    "generateRecipes": {
+      "title": "Generate Recipes",
+      "description": "Get personalized recipe suggestions based on the ingredients you've added."
+    },
+    "mealPrepTracker": {
+      "title": "Organize Your Meal Prep and Track Calories",
+      "description": "Effortlessly plan your meals and track the calories you consume to stay on top of your health goals.",
+      "soon": "(Soon)"
+    },
+    "challengeFriends": {
+      "title": "Challenge Friends",
+      "description": "Compete with your friends to complete challenges and earn badges as you progress.",
+      "soon": "(Soon)"
+    },
+    "scanReceipts": {
+      "title": "Scan Shopping Receipts",
+      "description": "Upload your shopping receipts to automatically add items to your inventory."
+    },
+    "voiceToText": {
+      "title": "Voice to Text",
+      "description": "Use voice commands to add ingredients or find recipes with ease.",
+      "soon": "(Soon)"
+    }
+  },
+  "newsletter": {
+    "title": "Delicious Recipes delivered daily to your mailbox",
+    "placeholder": "your.email@example.com",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "successMessage": "Subscription successful! Please check your inbox.",
+    "errorMessage": "Please enter a valid email address.",
+    "backgroundText": "DELICIOUS"
+  },
+  "recipes": {
+    "sectionTitle": "Recipes Tailored to Your Preferences",
+    "sectionSubtitle": "Sweet, spicy, healthy, or indulgent—you decide. Explore recipes that suit your cravings!",
+    "africanFoods": {
+      "name": "African Foods",
+      "description": "Thiep, Atassi, and more."
+    },
+    "spicyFavorites": {
+      "name": "Spicy Favorites",
+      "description": "Noodles, Tacos, and curries."
+    },
+    "healthyChoices": {
+      "name": "Healthy Choices",
+      "description": "Salads, smoothies, and light entrees."
+    },
+    "sweetTreats": {
+      "name": "Sweet Treats",
+      "description": "Cakes, desserts, and homemade candies."
+    },
+    "learnMore": "Learn More..."
+  },
+  "team": {
+    "title": "Easy Teams Chefs",
+    "roles": {
+      "frontBackend": "Front/Backend",
+      "frontend": "Frontend",
+      "design": "Design"
+    }
+  },
+  "footer": {
+    "shareRecipe": {
+      "title": "Have a Great Recipe to Share?",
+      "button": "Send Recipe"
+    },
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "howItWorks": "How does it work?",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy"
+    },
+    "social": {
+      "twitter": "Twitter"
+    },
+    "contact": {
+      "email": "Email us at:",
+      "copyright": "© 2024 Eat'Easy. All rights reserved."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At Eat'Easy, we respect your privacy. This Privacy Policy outlines how we collect, use, and protect your personal data when you use our app.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "content": "We collect the following types of information when you use the app:",
+      "personalInfo": "Personal Information (e.g., name, email)",
+      "usageData": "Usage Data (e.g., how you use the app)",
+      "deviceInfo": "Device Information (e.g., device type, operating system)"
+    },
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "content": "We use your data to:",
+      "personalizedRecipes": "Provide personalized recipe suggestions",
+      "improveApp": "Improve app performance and user experience",
+      "communicate": "Communicate with you about app updates and offers"
+    },
+    "section3": {
+      "title": "3. Data Security",
+      "content": "We take reasonable measures to protect your personal data. However, no method of transmission over the internet or electronic storage is 100% secure."
+    },
+    "section4": {
+      "title": "4. Sharing Your Information",
+      "content": "We do not sell, trade, or rent your personal information to third parties. We may share data with service providers to help us deliver our services."
+    },
+    "section5": {
+      "title": "5. Your Rights",
+      "content": "You have the right to access, update, or delete your personal information. If you wish to exercise these rights, please contact us at"
+    },
+    "section6": {
+      "title": "6. Changes to This Privacy Policy",
+      "content": "We may update this policy from time to time. Any changes will be posted in the app, and we encourage you to review this policy periodically."
+    },
+    "section7": {
+      "title": "7. Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us at"
+    }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "intro": "Welcome to EatEasy! By accessing or using our app, website, or services (collectively, the \"Service\"), you agree to be bound by these Terms and Conditions (\"Terms\"). Please read them carefully before proceeding. If you do not agree with these Terms, you must refrain from using the Service.",
+    "section1": {
+      "title": "1. Introduction",
+      "content": "These Terms govern your use of the EatEasy app, its features, and services, including but not limited to recipe generation, inventory management, ticket scanning, and community features. By downloading, accessing, or using the Service, you acknowledge that you have read, understood, and agreed to comply with these Terms. EatEasy reserves the right to modify these Terms at any time, and such changes will be effective upon posting. Your continued use of the Service after changes constitutes acceptance of the updated Terms."
+    },
+    "section2": {
+      "title": "2. Eligibility",
+      "content": "The Service is intended for users who are at least 13 years of age. If you are under 18, you may only use the Service with the consent and supervision of a parent or legal guardian. By using the Service, you confirm that you meet these eligibility requirements and that any information you provide (e.g., age, location) is accurate."
+    },
+    "section3": {
+      "title": "3. Account Registration and Security",
+      "content": "To access certain features of the Service (e.g., saving recipes, generating shopping lists, or participating in community challenges), you may need to create an account. You agree to provide accurate and complete information during registration and to keep your account credentials secure. You are responsible for all activities that occur under your account. If you suspect unauthorized access, you must notify us immediately at"
+    },
+    "section4": {
+      "title": "4. Use of the Service",
+      "content": "You agree to use the Service for personal, non-commercial purposes only, unless otherwise agreed in writing by EatEasy. Prohibited activities include, but are not limited to:",
+      "illegal": "Using the Service for illegal or unauthorized purposes.",
+      "hacking": "Attempting to access restricted areas, reverse-engineer, or hack the Service.",
+      "disrupting": "Disrupting the Service's functionality or harming other users (e.g., uploading malicious content).",
+      "scraping": "Scraping or harvesting data from the Service without permission."
+    },
+    "section5": {
+      "title": "5. Content Ownership and Intellectual Property",
+      "content": "All content provided through the Service, including but not limited to text, images, logos, recipes, software, and design elements, is the exclusive property of EatEasy or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, or create derivative works from this content without prior written consent from EatEasy. You are granted a limited, non-exclusive, non-transferable license to use the Service for personal purposes, subject to these Terms."
+    },
+    "section6": {
+      "title": "6. User-Generated Content",
+      "content": "You may submit or share content through the Service, such as recipes, reviews, feedback, or community posts (\"User Content\"). By submitting User Content, you grant EatEasy a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, and sublicensable license to use, reproduce, modify, adapt, publish, distribute, and display such content in connection with the Service, including for promotional purposes. You represent and warrant that:",
+      "ownership": "You own or have the necessary rights to share the User Content.",
+      "noInfringement": "Your User Content does not infringe on the rights of others (e.g., copyright, privacy).",
+      "compliance": "Your User Content complies with applicable laws and these Terms.",
+      "moderation": "EatEasy reserves the right to remove or moderate User Content that violates these Terms or is deemed inappropriate."
+    },
+    "section7": {
+      "title": "7. Community Features and Gamification",
+      "content": "The Service includes community features such as recipe sharing, challenges, leaderboards, and voting. You agree to engage respectfully with other users and to refrain from posting offensive, defamatory, or harmful content. EatEasy is not responsible for the accuracy or quality of user interactions within these features but may intervene to ensure a safe and positive environment."
+    },
+    "section8": {
+      "title": "8. Privacy and Data Collection",
+      "content": "Your privacy is important to us. By using the Service, you agree to our Privacy Policy, which details how we collect, use, store, and protect your personal information, including data from ticket scans, ingredient lists, and user interactions. You can review the full Privacy Policy within the app or on our website. You also consent to the use of cookies and similar technologies to enhance your experience."
+    },
+    "section9": {
+      "title": "9. Third-Party Integrations and Links",
+      "content": "The Service may integrate with third-party services (e.g., payment processors, delivery apps) or contain links to external websites. EatEasy is not responsible for the content, privacy practices, or availability of these third-party services. Your use of such services is at your own risk and subject to their respective terms and policies."
+    },
+    "section10": {
+      "title": "10. Subscription and Payment (If Applicable)",
+      "content": "Certain features of the Service may require a subscription or payment (e.g., premium recipe access, advanced analytics). All fees are non-refundable unless otherwise stated. You agree to provide accurate payment information and authorize EatEasy to charge the applicable fees. Subscriptions may auto-renew unless canceled before the renewal date. EatEasy reserves the right to modify pricing with prior notice."
+    },
+    "section11": {
+      "title": "11. Limitation of Liability",
+      "content": "To the maximum extent permitted by law, EatEasy and its affiliates, officers, employees, or agents shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the Service, including but not limited to:",
+      "lossOfData": "Loss of data, revenue, or goodwill.",
+      "inaccuracies": "Inaccuracies in recipes or nutritional information.",
+      "interruptions": "Service interruptions or technical issues.",
+      "userActions": "Actions or content of other users.",
+      "asIs": "The Service is provided on an \"as-is\" and \"as-available\" basis, and EatEasy does not guarantee that it will be error-free or uninterrupted."
+    },
+    "section12": {
+      "title": "12. Indemnification",
+      "content": "You agree to indemnify and hold harmless EatEasy and its affiliates, officers, employees, and agents from any claims, liabilities, damages, or expenses (including legal fees) arising from your use of the Service, violation of these Terms, or infringement of any third-party rights."
+    },
+    "section13": {
+      "title": "13. Updates and Modifications",
+      "content": "EatEasy may update, modify, or discontinue the Service or its features at any time without prior notice. We may also update these Terms periodically, and the updated Terms will be posted within the app or on our website. Your continued use of the Service after such updates constitutes acceptance of the revised Terms."
+    },
+    "section14": {
+      "title": "14. Termination",
+      "content": "EatEasy reserves the right to suspend or terminate your access to the Service at its sole discretion, with or without notice, if you violate these Terms, engage in prohibited activities, or for any other reason deemed necessary to protect the Service or its users. Upon termination, your right to use the Service will cease, and any data associated with your account may be deleted, subject to applicable laws."
+    },
+    "section15": {
+      "title": "15. Governing Law and Dispute Resolution",
+      "content": "These Terms are governed by the laws of France, given EatEasy's operations in France and Bénin. Any disputes arising from these Terms or your use of the Service shall be subject to the exclusive jurisdiction of the courts in Paris, France. For users in Bénin, disputes may also be resolved through mediation or arbitration in Cotonou, as per local regulations, if applicable."
+    },
+    "section16": {
+      "title": "16. Force Majeure",
+      "content": "EatEasy shall not be liable for any failure to perform its obligations under these Terms due to events beyond its reasonable control, including but not limited to natural disasters, pandemics, government actions, or internet outages."
+    },
+    "section17": {
+      "title": "17. Contact Us",
+      "content": "If you have any questions, concerns, or feedback regarding these Terms, please contact us at:",
+      "lastUpdated": "Last updated: March 20, 2025"
+    }
+  }
+}

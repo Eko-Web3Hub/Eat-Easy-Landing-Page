@@ -1,30 +1,32 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const RecipesCard = () => {
+  const { t } = useTranslation();
   const [selectedRecipe, setSelectedRecipe] = useState(null);
 
   const recipes = [
     {
-      name: "African Foods",
-      description: "Thiep, Atassi, and more.",
+      name: t('recipes.africanFoods.name'),
+      description: t('recipes.africanFoods.description'),
       image: "/recipeCard/african.png",
       link: "/recipes/french-classics",
     },
     {
-      name: "Spicy Favorites",
-      description: "Noodles, Tacos, and curries.",
+      name: t('recipes.spicyFavorites.name'),
+      description: t('recipes.spicyFavorites.description'),
       image: "/recipeCard/tacos.png",
       link: "/recipes/spicy-favorites",
     },
     {
-      name: "Healthy Choices",
-      description: "Salads, smoothies, and light entrees.",
+      name: t('recipes.healthyChoices.name'),
+      description: t('recipes.healthyChoices.description'),
       image: "/recipeCard/smoothie.png",
       link: "/recipes/healthy-choices",
     },
     {
-      name: "Sweet Treats",
-      description: "Cakes, desserts, and homemade candies.",
+      name: t('recipes.sweetTreats.name'),
+      description: t('recipes.sweetTreats.description'),
       image: "/recipeCard/dessert.png",
       link: "/recipes/sweet-treats",
     },
@@ -35,10 +37,10 @@ const RecipesCard = () => {
       {/* Header Section */}
       <div className="mb-8 text-center">
         <h2 className="mb-4 text-2xl sm:text-3xl font-bold">
-          Recipes Tailored to Your Preferences
+          {t('recipes.sectionTitle')}
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-gray-700">
-          Sweet, spicy, healthy, or indulgent—you decide. Explore recipes that suit your cravings!
+          {t('recipes.sectionSubtitle')}
         </p>
       </div>
 
@@ -70,7 +72,7 @@ const RecipesCard = () => {
                   href={recipe.link}
                   className="text-white font-semibold hover:underline hover:text-secondary"
                 >
-                  Learn More...
+                  {t('recipes.learnMore')}
                 </a>
               </div>
             )}
