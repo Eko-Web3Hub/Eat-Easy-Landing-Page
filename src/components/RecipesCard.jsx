@@ -36,7 +36,7 @@ const RecipesCard = () => {
     <div className="px-4 py-12 sm:px-6 lg:px-12 bg-lightest">
       {/* Header Section */}
       <div className="mb-8 text-center">
-        <h2 className="mb-4 text-2xl sm:text-3xl font-bold">
+        <h2 className="section-title-magilio mb-4 text-2xl sm:text-3xl lg:text-4xl">
           {t('recipes.sectionTitle')}
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-gray-700">

@@ -5,6 +5,7 @@ import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyAndPolicy from "../pages/PrivacyAndPolicy";
 import DeleteAccount from "../pages/DeleteAccount";
 import RecipePage from "../pages/RecipePage";
+import AnalyticsDashboard from "../components/AnalyticsDashboard";
 
 const AppRouter = () => {
   return (
@@ -14,6 +15,7 @@ const AppRouter = () => {
       <Route path="/privacy-policy" element={<PrivacyAndPolicy />} />
       <Route path="/delete-account" element={<DeleteAccount />} />
       <Route path="/home/recipe-details/:lang/:uid/:recipe_name" element={<RecipePage />} />
+      <Route path="/analytics" element={<AnalyticsDashboard />} />
     </Routes>
   );
 };

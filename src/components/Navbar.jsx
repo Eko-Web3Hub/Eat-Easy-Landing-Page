@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import analytics from "../utils/analytics";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -33,8 +34,12 @@ const Navbar = () => {
 
   // Language change handler
   const handleLanguageChange = (lang) => {
+    const previousLanguage = language;
     setLanguage(lang);
     setIsMenuOpen(false); // Close dropdown if opened
+    
+    // Track language change event
+    analytics.trackLanguageChange(lang, previousLanguage);
   };
 
   return (

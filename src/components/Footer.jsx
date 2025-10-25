@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import analytics from "../utils/analytics";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -79,13 +80,21 @@ const Footer = () => {
 
       <div className="border-t border-white/20 pt-10 pb-5 text-center">
         <div className="mb-4">
-          <a href="https://x.com/EatEasyApp" className="text-white mx-2 hover:text-secondary">
+          <a 
+            href="https://x.com/EatEasyApp" 
+            className="text-white mx-2 hover:text-secondary"
+            onClick={() => analytics.trackExternalLink('https://x.com/EatEasyApp', 'Twitter')}
+          >
             {t('footer.social.twitter')}
           </a>
         </div>
         <p className="text-sm mb-2">
           {t('footer.contact.email')}{" "}
-          <a href="mailto:eateasyhub@gmail.com" className="text-white hover:text-secondary">
+          <a 
+            href="mailto:eateasyhub@gmail.com" 
+            className="text-white hover:text-secondary"
+            onClick={() => analytics.trackExternalLink('mailto:eateasyhub@gmail.com', 'Email Contact')}
+          >
             eateasyhub@gmail.com
           </a>
         </p>

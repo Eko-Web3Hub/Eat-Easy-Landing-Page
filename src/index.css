@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/magilio');
+@import url('https://fonts.cdnfonts.com/css/base-neue');
 
 @tailwind base;
 @tailwind components;
@@ -125,10 +125,88 @@ button.secondary {
 }
 
 .title-magilio {
-  font-family: 'Magilio', 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Base Neue', 'Plus Jakarta Sans', sans-serif;
   color: white;
   -webkit-text-stroke: 4px #F5A41C;
-  text-stroke: 16px #F5A41C;
+  text-stroke: 4px #F5A41C;
   font-weight: 900;
   letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+/* Mobile optimizations for title */
+@media (max-width: 767px) {
+  .title-magilio {
+    -webkit-text-stroke: 2px #F5A41C;
+    text-stroke: 2px #F5A41C;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .title-magilio {
+    -webkit-text-stroke: 1.5px #F5A41C;
+    text-stroke: 1.5px #F5A41C;
+    letter-spacing: 0;
+    line-height: 1.15;
+  }
+}
+
+/* Section titles with Base Neue font - smaller than main title */
+.section-title-magilio {
+  font-family: 'Base Neue', 'Plus Jakarta Sans', sans-serif;
+  color: #121212;
+  -webkit-text-stroke: 2px #F5A41C;
+  text-stroke: 2px #F5A41C;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+/* Mobile optimizations for section titles */
+@media (max-width: 767px) {
+  .section-title-magilio {
+    -webkit-text-stroke: 1.5px #F5A41C;
+    text-stroke: 1.5px #F5A41C;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title-magilio {
+    -webkit-text-stroke: 1px #F5A41C;
+    text-stroke: 1px #F5A41C;
+  }
+}
+
+/* Section titles with Base Neue font and WHITE text */
+.section-title-magilio-white {
+  font-family: 'Base Neue', 'Plus Jakarta Sans', sans-serif;
+  color: white;
+  -webkit-text-stroke: 2px #F5A41C;
+  text-stroke: 2px #F5A41C;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+/* Mobile optimizations for white section titles */
+@media (max-width: 767px) {
+  .section-title-magilio-white {
+    -webkit-text-stroke: 1.5px #F5A41C;
+    text-stroke: 1.5px #F5A41C;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title-magilio-white {
+    -webkit-text-stroke: 1px #F5A41C;
+    text-stroke: 1px #F5A41C;
+  }
 }

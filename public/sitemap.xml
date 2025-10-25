@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://eateasy.vercel.app/</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eateasy.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://eateasy.vercel.app/" />
+    <image:image>
+      <image:loc>https://eateasy.vercel.app/banner.png</image:loc>
+      <image:title>Eat'Easy - AI Recipe Generator App</image:title>
+      <image:caption>Transform your ingredients into delicious meals with AI-powered recipe generation</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://eateasy.vercel.app/privacy-policy</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eateasy.vercel.app/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://eateasy.vercel.app/privacy-policy" />
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://eateasy.vercel.app/terms-and-conditions</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eateasy.vercel.app/terms-and-conditions" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://eateasy.vercel.app/terms-and-conditions" />
+  </url>
+
+  <!-- Delete Account -->
+  <url>
+    <loc>https://eateasy.vercel.app/delete-account</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import analytics from "../utils/analytics";
 
 const NewsletterBox = () => {
   const { t } = useTranslation();
@@ -45,6 +46,9 @@ const NewsletterBox = () => {
         setStatus({ type: "success", message: t('newsletter.successMessage') });
         setEmail("");
         setLoading(false);
+        
+        // Track newsletter signup
+        analytics.trackNewsletterSignup(email);
       }, 1000);
     }
   };
@@ -62,7 +66,7 @@ const NewsletterBox = () => {
 
       {/* Text and Form Section */}
       <div className="flex flex-col space-y-6 md:space-y-10 flex-grow text-center md:items-center md:justify-center md:text-left">
-        <h2 className="text-lg md:text-3xl md:text-center font-bold">
+        <h2 className="section-title-magilio-white text-lg md:text-2xl lg:text-3xl md:text-center">
           {t('newsletter.title')}
         </h2>
 

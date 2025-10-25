@@ -11,12 +11,15 @@
     "generate-index": "node src/components/generateIndex.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "firebase": "^11.6.1",
     "framer-motion": "^11.15.0",
     "i18next": "^24.2.0",
     "lightweight-charts": "^4.2.2",
     "react": "^18.3.1",
+    "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.3.1",
+    "react-ga4": "^2.1.0",
     "react-i18next": "^15.2.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.1"

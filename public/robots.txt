@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://eateasy.vercel.app/sitemap.xml
+
+# Disallow analytics pages from crawling
+Disallow: /analytics
+
+# Allow important pages
+Allow: /
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+
+# Crawl delay (optional - be respectful to search engines)
+Crawl-delay: 1

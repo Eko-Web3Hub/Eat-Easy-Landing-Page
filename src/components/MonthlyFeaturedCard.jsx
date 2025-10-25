@@ -30,7 +30,7 @@ const MonthlyFeaturedCard = () => {
   return (
     <div className="p-4 md:p-8">
       {/* Heading */}
-      <h2 className="text-center text-2xl md:text-3xl font-bold mb-20 md:mb-20">
+      <h2 className="section-title-magilio text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-12 sm:mb-16 md:mb-20">
         {t('team.title')}
       </h2>
 

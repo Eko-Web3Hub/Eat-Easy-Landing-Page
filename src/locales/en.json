@@ -6,15 +6,15 @@
     "playStore": "Play Store"
   },
   "features": {
-    "sectionTitle": "Discover What Our App Can Do",
-    "sectionSubtitle": "Eat'Easy is your ultimate kitchen companion, packed with features that make meal planning effortless and cooking a joy. Discover how it can revolutionize your culinary journey!",
+    "sectionTitle": "AI-Powered Recipe Generation Features",
+    "sectionSubtitle": "Eat'Easy is your smart cooking assistant, packed with AI features that make meal planning effortless and recipe discovery exciting. Transform your kitchen experience with intelligent recipe suggestions!",
     "addIngredients": {
-      "title": "Add Ingredients",
-      "description": "Easily add ingredients from your kitchen to your inventory and keep track of what you have."
+      "title": "Smart Ingredient Management",
+      "description": "Easily add and track ingredients from your kitchen inventory. Our AI recognizes your pantry items for accurate recipe matching."
     },
     "generateRecipes": {
-      "title": "Generate Recipes",
-      "description": "Get personalized recipe suggestions based on the ingredients you've added."
+      "title": "AI Recipe Generator",
+      "description": "Get personalized recipe suggestions powered by artificial intelligence, perfectly matched to your available ingredients and dietary preferences."
     },
     "mealPrepTracker": {
       "title": "Organize Your Meal Prep and Track Calories",
